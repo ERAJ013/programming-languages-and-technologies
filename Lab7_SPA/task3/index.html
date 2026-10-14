@@ -1,0 +1,34 @@
+HTML
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление мероприятиями</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Управление мероприятиями</h1>
+        <p>Система организации событий и регистрации участников</p>
+    </header>
+
+    <nav class="tabs" aria-label="Навигация">
+        <button class="tab active" data-page="events"
+                aria-current="page">События</button>
+        <button class="tab" data-page="registration"
+                aria-current="false">Регистрация</button>
+        <button class="tab" data-page="participants"
+                aria-current="false">Участники</button>
+    </nav>
+
+    <main id="content" aria-live="polite"></main>
+
+    <footer>
+        <p>Лабораторная работа № 7 | SPA без фреймворков</p>
+    </footer>
+</body>
+</html>
+
+Copied

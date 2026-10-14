@@ -1,0 +1,111 @@
+css
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+.header {
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+.header p {
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.tabs {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.tab {
+    flex: 1;
+    min-width: 100px;
+    padding: 13px 18px;
+    border: none;
+    border-radius: 10px;
+    background: white;
+    color: #334155;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.tab:hover {
+    background: #dbeafe;
+}
+
+.tab.active {
+    background: #2563eb;
+    color: white;
+}
+
+.tab:focus-visible {
+    outline: 3px solid #f59e0b;
+    outline-offset: 3px;
+}
+
+.content {
+    background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px #0000000d;
+    min-height: 230px;
+}
+
+.content h2 {
+    margin-top: 0;
+    color: #2563eb;
+}
+
+.content li {
+    margin-bottom: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 26px;
+    }
+
+    .container {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    .tabs {
+        flex-direction: column;
+    }
+
+    .content {
+        padding: 20px;
+    }
+}
